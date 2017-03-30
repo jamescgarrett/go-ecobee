@@ -9,7 +9,7 @@ Go Ecobee is a package for handling the Ecobee thermostat API. [Ecobee API](http
 1) Follow Ecobee's instructions to get your API KEY. [Instructions Here](https://www.ecobee.com/home/developer/api/examples/ex1.shtml)
 2) `go get github.com/jamescgarrett/go-ecobee`
 3) Anywhere in your application directory create a mostly blank .yaml file with the following content:
-```
+```yaml
 api_key: YOUR_API_KEY
 pin: ""
 access_token: ""
@@ -21,7 +21,7 @@ interval_revision: ""
 ```
 
 ## Negroni Example
-```
+```go
 package main
 
 import(
@@ -240,7 +240,7 @@ includeSensors
 ```
 
 Example request: (curl example comin soon)
-```
+```html
 <form>
   <input type='checkbox' name='includeRuntime' value="true" /> Include Runtime
   
